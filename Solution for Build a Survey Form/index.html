@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantanium Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Plantanium Survey Form</h1>
+            <p id="description">Your responses will play a vital role in improving our platform</p>
+    
+        </header>
+        
+    
+        <form action="" id="survey-form">
+            <!-- Text Section -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="fc" required>
+            </div>       
+            <!-- End of text Section -->
+    
+            <!-- Email Section -->
+            <div class="form-group">
+                <label id="email-label" for="name">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" class="fc" required>
+            </div>
+            <!-- End of Email Section -->
+    
+            <!-- Number Section -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age <span class="rope">(optional)</span></label>
+                <input type="number" placeholder="type your number" value="number" id="number" min="0" max="100" class="fc" required>
+            </div>
+            <!-- End of Number Section -->
+    
+            <!-- Select Section -->
+            <div class="form-group">
+                <p id="pot">Select Your Preferrable Role</p>
+                <select name="role" id="dropdown" class="fc" required>
+                    <option value="name">Choose Here</option>
+                    <option value="Student">Student</option>
+                    <option value="Mechanical Engineer">Mechanical Engineer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+             <!--End of Select Section -->
+    
+             <!-- Radio button Section -->
+             <div class="form-group">
+                <p id="pot">Who told you about Plantanium ?</p>
+                <label for="">
+                    <input type="radio" name="attribute" value="Family" class="mole">Family
+                </label>
+                <label for="">
+                    <input type="radio" name="attribute" value="Friends" class="mole">Friends
+                </label>
+                <label for="">
+                    <input type="radio" name="attribute" value="Other" class="mole">Other
+                </label>
+                
+             </div>
+    
+             <!-- End of Radio Button Section -->
+
+             <!-- Checkbox Section -->
+                <div class="form-group">
+                    <p id="pot">What area Will you like to see Plantanium do better ?</p>
+                    <label for="">
+                        <input type="checkbox" name="box" value="attribute" class="bottle">Customer Services
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="box" value="attribute" class="bottle">Prodcuts
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="box" value="attribute" class="bottle">Website
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="box" value="attribute" class="bottle">Our stores in other part of Nigeria
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="box" value="attribute" class="bottle">Other
+                    </label>
+                </div>
+             <!-- End of Checkbox Section -->
+
+             <!-- Text area Section -->
+             <div class="form-group">
+                <p id="pot">Give us your Feedback</p>
+                <textarea name="Feedback" id="Feedback" cols="30" rows="5" class="textarea" placeholder="For additonal Comments"></textarea>
+             </div>
+
+             <!-- End of textarea Section -->
+
+             <!-- Button Section -->
+             <div class="form-group">
+                <button id="submit" type="submit" class="btn">Submit</button>
+             </div>
+             <!-- End of Button Section -->
+            
+        
+        </form>
+    </div>
+
+    
+</body>
+</html>
